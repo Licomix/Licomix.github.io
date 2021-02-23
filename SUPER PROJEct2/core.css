@@ -1,0 +1,34 @@
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.relative{
+    width: 100%;
+    position: relative;
+}
+.fixed{
+    width: 100%;
+    position: fixed;
+}
+.col-55{
+    width: 60%;
+}
+.col-33{
+    width: 33%;
+}
+.col-44{
+    width: 44%;
+}
+<input type="name" name="name" placeholder="Имя">
+                        <input type="email" name="email" placeholder="Мыло"/>
+                        <input type="text" name="message" placeholder="Ваше сообщение..."/>
+                        <button id="my-form-button">Отправить</button>
+                        <form id="my-form" action="https://formspree.io/f/meqprwvn" method="POST">
