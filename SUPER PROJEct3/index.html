@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./calculator.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="preloader">
+            <img src="./a8571b6dc6dc6669b649911e1b1cb836.gif" id="gif">
+            <div class="preloader__row">
+              <div class="preloader__item"></div>
+              <div class="preloader__item"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+            <div class="elementOfDesctop">
+                <img src="./logo-2-300x300.png" id="computerButton">
+                <h2 id="computerButton">Этот компьютер</h2>
+            </div>
+            <div class="elementOfDesctop">
+            <img id="calculatorButton" src="./Windows-10-Calculator-Fluent-Icon-Big-256.png">
+            <h2 id="calculatorButton">Калькулятор</h2>
+            </div>
+            <div class="elementOfDesctop">
+            <img id="notepadButton" src="./Windows_Notepad_Icon.png">
+            <h2 id="notepadButton">Блокнот</h2>
+            </div>
+            <div class="elementOfDesctop">
+            <a href="./кликер/index.html"><img src="./Clickr.png" alt="Clickr"></a>
+            <h3><a href="./кликер/index.html">Clickr</a></h3>
+            </div>
+            <div class="elementOfDesctop">
+            <a href="./Динозаврик/index.html"><img src="./динозаврики.png"></a>
+            <h2><a href="./Динозаврик/index.html">Dino T-Rex</a></h2>
+            </div>
+            <div class="elementOfDesctop">
+            <a href="./Змейка/index.html"><img src="./Змейка.png"></a>
+            <h2><a href="./Змейка/index.html">Snake</a></h2>
+            </div>
+            <div class="elementOfDesctop">
+            <a href="./Крестики нолики/index.html"><img src="./Крестик-нолик.png"></a>
+            <h2><a href="./Крестики нолики/index.html">Tic-Tac</a></h2>
+            </div>
+        <div id="calculatorWindow">
+            <div class="window">
+                <input value="✖" readonly id="closeCalculator">
+            </div>
+            <div id="calculator">
+            <input type="text" class="out" disabled>
+            <div class="buttons">
+              <div class="row">
+                <button value="7">7</button>
+                <button value="8">8</button>
+                <button value="9">9</button>
+                <button value="+" class="operator">+</button>
+              </div>
+              <div class="row">
+                <button value="4">4</button>
+                <button value="5">5</button>
+                <button value="6">6</button>
+                <button value="-" class="operator">-</button>
+              </div>
+              <div class="row">
+                <button value="1">1</button>
+                <button value="2">2</button>
+                <button value="3">3</button>
+                <button value="*" class="operator">*</button>
+              </div>
+              <div class="row">
+                <button value="C" class="operator">C</button>
+                <button value="0">0</button>
+                <button value="/" class="operator">/</button>
+                <button value="=" class="operator">=</button>
+              </div>
+            </div>
+            </div>
+        </div>
+        <div id="notepad">
+            <div id="notepadWindow">
+              <input value="✖" readonly id="closeNotepad">
+            </div>
+            <textarea wrap="soft" id="textarea"></textarea>
+        </div>
+        <div id="computer">
+          <div id="computerWindow">
+            <input value="✖" readonly id="closeComputer">
+          </div>
+          <img src="./Screenshot_1.png">
+        </div>
+    </main>
+    <footer id="footer">
+        <div>
+          <img src="./600px-Windows_logo_-_2012.svg.png" width="23px">
+          <p id="date"></p>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="./calculator.js"></script>
+</body>
+</html>
